@@ -42,3 +42,35 @@ mat2 = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
 s.setZeroes(mat2)
 print(mat2)  # [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
+# ---------------------------
+# Taking input from user
+# ---------------------------
+
+# Read dimensions
+m, n = map(int, input("Enter number of rows and columns: ").split())
+
+# Read matrix
+matrix = []
+print("Enter the matrix row by row (space-separated):")
+for _ in range(m):
+    row = list(map(int, input().split()))
+    matrix.append(row)
+
+# Apply function
+s = Solution()
+s.setZeroes(matrix)
+
+# Print final matrix
+print("Matrix after modification:")
+for row in matrix:
+    print(row)
+
+
+"""
+Enter number of rows and columns: 3 3
+Enter the matrix row by row (space-separated):
+1 1 1
+1 0 1
+1 1 1
+"""
+
