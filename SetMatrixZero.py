@@ -30,3 +30,15 @@ class Solution:
         if col0 == 0:
             for i in range(rows):
                 matrix[i][0] = 0
+
+
+s = Solution()
+mat = [[1,1,1],[1,0,1],[1,1,1]]
+s.setZeroes(mat)
+print(mat)   # [[1,0,1],[0,0,0],[1,0,1]]
+
+
+mat2 = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+s.setZeroes(mat2)
+print(mat2)  # [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+
